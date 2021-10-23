@@ -10,6 +10,9 @@ class TestMain(unittest.TestCase):
     def test_starting_up(self):
         self.assertEqual(main.starting_up(), "hello world")
 
+    def test_first_choice(self):
+        self.assertEqual(main.first_choice("L"), "left")
+
 
 if __name__ == '__main__':
     unittest.main()
